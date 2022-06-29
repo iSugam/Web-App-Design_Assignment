@@ -1,0 +1,99 @@
+/***** Fonts *****/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;900&family=Potta+One&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*************************
+Header Navbar Social Media
+*************************/
+header {
+    position: relative;
+    z-index: 9;
+}
+header nav .nav-social {
+    width: 100%;
+    padding: .5rem 0;
+    background: linear-gradient(to right, rgb(86, 118, 246), rgb(40, 40, 97));
+    text-align: right;
+}
+
+header nav .nav-social .social-media .social-icon  {
+    color: #fff;
+    margin: auto 8px;
+    position: relative;
+}
+header nav .nav-social .social-media .social-icon:last-child {
+    margin-right: 100px;
+}
+
+header nav .nav-social .social-media .social-icon::after {
+    content: '';
+    position: absolute;
+    height: 200%;
+    width: 1px;
+    background-color: rgb(74, 98, 141);
+    top: -50%;
+    right: -9px;
+}
+
+.facebook::before {
+    content: '';
+    position: absolute;
+    height: 200%;
+    width: 1px;
+    background-color: rgb(74, 98, 141);
+    top: -50%;
+    left: -9px;
+}
+
+header nav .nav-items {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(18, 25, 67, 0.3);
+    padding: 0 5rem;
+}
+header nav .nav-items .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: clamp(18px, 6.5vw, 30px);
+}
+
+header nav .nav-items .links li {
+    display: inline;
+    text-transform: uppercase;
+}
+
+header nav .nav-items .links li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 12px;
+}
+
+
+#main .background-image {
+   width: 100%;
+   position: relative;
+   background-color: #fff5;
+   z-index: -10;
+}
+
+
+#main .background-image img {
+    position: absolute;
+    top: -100px;
+    background-position: fixed;
+    width: 100%;
+
+}
