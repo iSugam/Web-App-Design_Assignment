@@ -199,13 +199,28 @@ About Us Section Style
 Same style for about, works heading
 =============================== */
 #about .about-heading h2, 
-#works .works-heading h2{
+#works .works-heading h2,
+#partners .partners-heading h2 {
     margin-bottom: 30px;
     font-weight: normal;
     font-size: clamp(30px, 6.5vw, 50px);
+    position: relative;
+    width: max-content;
 }
 #about .about-paragraph {
     font-size: clamp(13px, 2vw, 16px);
+}
+
+#about .about-heading h2::before, 
+#works .works-heading h2::before,
+#partners .partners-heading h2::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: -20px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* ===============
@@ -218,5 +233,107 @@ Work Section Style
 }
 
 .works-cards-container .icon {
-    font-size: 40px;
+    margin-bottom: 15px;;
+}
+
+/* ===================
+Partners Section Style
+=================== */
+
+#partners {
+    padding: 0 3rem;
+    margin-top: 90px;
+}
+
+.all-partners {
+    vertical-align: center;
+}
+.all-partners div {
+    display: inline;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.all-partners div img {
+    width: 10%;
+    float: right;
+    margin: 0 20px;
+}
+
+.all-partners .itunes img {
+    width: 65px;
+}
+.all-partners .target img {
+    width: 80px;
+}
+.all-partners .Starbucks img {
+    width: 74px;
+}
+
+#footer {
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+    padding: 100px;
+    padding-bottom: 30px;
+    background-color: #093851;
+}
+
+#footer .all-contacts{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+}
+
+#footer .all-contacts::after {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(3, 118, 128);
+}
+
+#footer h5{
+    color: #fff;
+    margin-bottom: 40px;
+    position: relative;
+    width: max-content;
+}
+
+#footer h5::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50%;
+    height: 2px;
+    background-color: #277ed5;
+}
+
+#footer a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#footer .contact-us .contact-details a i {
+    margin-right: 10px;
+}
+#footer .contact-us .contact-details .social {
+    margin-top: 10px;
+}
+#footer .contact-us .contact-details .social a {
+    display: inline;
+}
+
+#footer .copy-right{
+    color: #fff;
+    margin-top: 70px;
+    margin-left: 20px;
 }

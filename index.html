@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
+    <!--==================== HEADER SECTION START ====================-->
     <header id="header">
         <nav id="navbar">
             <div class="nav-social">
@@ -35,113 +36,176 @@
             </div>
         </nav>
     </header>
-<main>
-    <section class="row justify-content-around align-items-center" style="margin: auto" id="main">
-        <div class="main-text col-5 mt-5">
-            <h1>Welcome To The Community</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eveniet perspiciatis fuga error quaerat. 
-                Commodi molestiae quidem nam rem magni cum consectetur porro eveniet facere!
-            </p>
+    <!--==================== HEADER SECTION END ====================-->
 
-            <div class="register-btn"><a href="#"><i class="bi bi-person-plus-fill"></i> Register</a></div>
-        </div>
+    <!--==================== MAIN SECTION START ====================-->
+    <main>
+        <!--==================== COMMUNITY AND FORM SECTION START ====================-->
+        <section class="row justify-content-around align-items-center" style="margin: auto" id="main">
+            <div class="main-text col-5 mt-5">
+                <h1>Welcome To The Community</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eveniet perspiciatis fuga error quaerat. 
+                    Commodi molestiae quidem nam rem magni cum consectetur porro eveniet facere!
+                </p>
 
-        <div class="form-content col-4 mt-5">
-            <form action="" >
-                <div class="mb-4">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <div class="register-btn"><a href="#"><i class="bi bi-person-plus-fill"></i> Register</a></div>
+            </div>
+
+            <div class="form-content col-4 mt-5">
+                <form action="" >
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="formGroupExampleInput2" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+                    </div>
+
+                    <div class="forgot-password mb-4"><a href="#">Forgot Password?</a></div>
+                    <div class="submit-btn mb-4">
+                        <button class="btn" type="submit">Sign in</button>
+                    </div>
+                    
+
+                    <div class="create-account mb-3">Not registered? <a href="#">Create an account</a></div>
+
+                    <div class="social-signin d-flex justify-content-around">
+                        <a class="social-icon facebook" href="#"><i class="bi bi-facebook"></i></a>
+                        <a class="social-icon twitter" href="#"><i class="bi bi-twitter"></i></a>
+                        <a class="social-icon linkedin" href="#"><i class="bi bi-linkedin"></i></a>
+                        <a class="social-icon google-plus" href="#"><i class="bi bi-google"></i></a>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+        <!--==================== COMMUNITY AND FORM SECTION END ====================-->
+
+        <!--==================== ABOUT SECTION START ====================-->
+        <section id="about" class="d-flex justify-content-around gap-5">
+            <div class="about-img">
+                <img src="/assets/images/about-img.png" alt="">
+            </div>
+
+            <div class="about-text">
+                <div class="about-heading">
+                    <h2>About Us</h2>
                 </div>
-
-                <div class="mb-2">
-                    <label for="formGroupExampleInput2" class="form-label">Password</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
-                </div>
-
-                <div class="forgot-password mb-4"><a href="#">Forgot Password?</a></div>
-                <div class="submit-btn mb-4">
-                    <button class="btn" type="submit">Sign in</button>
+                <div class="about-paragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quo quae corrupti
+                        praesentium ipsum reprehenderit aut amet mollitia maxime debitis quaerat beatae 
+                        dolores tenetur tempora minus nobis, facilis sint assumenda cupiditate rem, repudiandae 
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quo quae corrupti
+                        praesentium ipsum reprehenderit aut amet mollitia maxime debitis quaerat beatae 
+                        dolores tenetur tempora minus nobis, facilis sint assumenda cupiditate rem, repudiandae.
+                        praesentium ipsum reprehenderit aut amet mollitia maxime debitis quaerat beatae 
+                        dolores tenetur tempora minus nobis, facilis sint assumenda cupiditate rem, repudiandae.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quo quae corrupti
+                        praesentium ipsum reprehenderit aut amet mollitia maxime debitis quaerat beatae 
+                        dolores tenetur tempora minus nobis, facilis sint assumenda cupiditate rem, repudiandae.
+                        praesentium ipsum reprehenderit aut amet mollitia maxime debitis quaerat beatae 
+                        dolores tenetur tempora minus nobis, facilis sint assumenda cupiditate rem, repudiandae.
+                    </p>
                 </div>
                 
+            </div>
+        </section>
+        <!--==================== ABOUT SECTION END ====================-->
 
-                <div class="create-account mb-3">Not registered? <a href="#">Create an account</a></div>
-
-                <div class="social-signin d-flex justify-content-around">
-                    <a class="social-icon facebook" href="#"><i class="bi bi-facebook"></i></a>
-                    <a class="social-icon twitter" href="#"><i class="bi bi-twitter"></i></a>
-                    <a class="social-icon linkedin" href="#"><i class="bi bi-linkedin"></i></a>
-                    <a class="social-icon google-plus" href="#"><i class="bi bi-google"></i></a>
+        <!--==================== WORKS SECTION START ====================-->
+        <section id="works">
+            <div class="works-heading">
+                <h2>How It Works</h2>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi corporis quia quidem.</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum tempore quam fugit?</p>
+                <a href="#" class="btn btn-link btn-outline-dark"><span><i class="bi bi-person-plus-fill"></i></span> Register</a>
                 </div>
-            </form>
-        </div>
+            </div>
 
-</section>
+            <div class="works-cards-container row text-center gap-3 mt-3 px-2">
+                <div class="col-sm border border-1 py-3">
+                    <div class="icon"><img src="/assets/images/icon-1.png" alt=""></div>
+                    <h4>Register for free</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-sm border border-1 py-3">
+                    <div class="icon"><img src="/assets/images/icon-4.png" alt=""></div>
+                    <h4>Take Surveys</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-sm border border-1 py-3">
+                    <div class="icon"><img src="/assets/images/icon-6.png" alt=""></div>
+                    <h4>Redeem</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </section>
+        <!--==================== WORKS SECTION END ====================-->
 
-<section id="about" class="d-flex justify-content-around gap-5">
-    <div class="about-img">
-        <img src="/assets/images/about-img.png" alt="">
-    </div>
+        <!--==================== PARTNERS SECTION START ====================-->
+        <section id="partners">
+            <div class="partners-heading">
+                <h2>Global Incentive Partners</h2>
+            </div>
+            <div class="all-partners">
+                <div class="itunes"><img src="/assets/images/itunes.png" alt=""></div> 
+                <div class="target"><img src="/assets/images/target-png.png" alt=""></div>
+                <div class="Starbucks"><img src="/assets/images/Starbucks-Logo-600x600-gray.png" alt=""></div>
+                <div class="amazon"><img src="/assets/images/logo-amazon-404px-grey.png" alt=""></div>
+            </div>
+        </section>
+        <!--==================== PARTNERS SECTION END ====================-->
+    </main>
+    <!--==================== MAIN SECTION END ====================-->
 
-    <div class="about-text">
-        <div class="about-heading">
-            <h2>About Us</h2>
-        </div>
-        <div class="about-paragraph">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quo quae corrupti
-                praesentium ipsum reprehenderit aut amet mollitia maxime debitis quaerat beatae 
-                dolores tenetur tempora minus nobis, facilis sint assumenda cupiditate rem, repudiandae 
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quo quae corrupti
-                praesentium ipsum reprehenderit aut amet mollitia maxime debitis quaerat beatae 
-                dolores tenetur tempora minus nobis, facilis sint assumenda cupiditate rem, repudiandae.
-                praesentium ipsum reprehenderit aut amet mollitia maxime debitis quaerat beatae 
-                dolores tenetur tempora minus nobis, facilis sint assumenda cupiditate rem, repudiandae.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quo quae corrupti
-                praesentium ipsum reprehenderit aut amet mollitia maxime debitis quaerat beatae 
-                dolores tenetur tempora minus nobis, facilis sint assumenda cupiditate rem, repudiandae.
-                praesentium ipsum reprehenderit aut amet mollitia maxime debitis quaerat beatae 
-                dolores tenetur tempora minus nobis, facilis sint assumenda cupiditate rem, repudiandae.
-            </p>
+    <!--==================== FOOTER SECTION START ====================-->
+    <footer id="footer">
+        <div class="all-contacts">
+            <div class="contact-us">
+                <h5>Contact Us</h5>
+                <div class="contact-details">
+                    <a href="#"><i class="bi bi-geo-alt-fill"></i> 123 Street, New York, USA</a>
+                    <a href="#"><i class="bi bi-telephone-fill"></i> +012 345 6789</a>
+                    <a href="#"><i class="bi bi-envelope-fill"></i> info@mail.com</a>
+                    <div class="social">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-google"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="quick-links">
+                <h5>Quick Links</h5>
+                <div class="links">
+                    <a href="#"><i class="bi bi-caret-right-fill"></i> Term Of Use</a>
+                    <a href="#"><i class="bi bi-caret-right-fill"></i> PrivacyPolicy</a>
+                    <a href="#"><i class="bi bi-caret-right-fill"></i> FAQs</a>
+                </div>
+            </div>
+    
+            <div class="write-us">
+                <h5>Write To Us</h5>
+                <div class="links">
+                    <a href="#">Email</a>
+                    <a href="#">xyz@email.com</a>
+                </div>
+            </div>
         </div>
         
-    </div>
-</section>
-
-<section id="works">
-    <div class="works-heading">
-        <h2>How It Works</h2>
-    </div>
-    <div class="card text-center">
-        <div class="card-body">
-          <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi corporis quia quidem.</h5>
-          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis harum tempore quam fugit?</p>
-          <a href="#" class="btn btn-link btn-outline-dark"><span><i class="bi bi-person-plus-fill"></i></span> Register</a>
+        <div class="copy-right">
+            <p>@ <b>Site name</b>, All right reserved</p>
         </div>
-    </div>
-
-    <div class="works-cards-container row text-center gap-3 mt-3 px-2">
-        <div class="col-sm border border-1 py-3">
-            <div class="icon"><i class="bi bi-people"></i></div>
-            <h4>Register for free</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="col-sm border border-1 py-3">
-            <div class="icon"><i class="bi bi-card-list"></i></div>
-            <h4>Take Surveys</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="col-sm border border-1 py-3">
-            <div class="icon"><i class="bi bi-hand-thumbs-up"></i></div>
-            <h4>Redeem</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </div>
-    
-</section>
-</main>
-
+    </footer>
 
 </body>
 </html>
