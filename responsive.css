@@ -1,0 +1,37 @@
+@media (max-width: 986px) {
+    #about {
+        gap: 2rem;
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width: 856px) {
+    #about {
+        flex-direction: column;
+    }
+
+    #about .about-heading h2{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 786px) {
+    
+    #main {
+        height: 100%;
+    }
+
+    #main .main-text, #main .form-content {
+        margin-top: 120px !important;
+    }
+}
+
+@media (max-width: 686px) {
+    #main .main-text, #main {
+        width: 100%;
+        padding: 1rem;
+    }
+     #main .form-content {
+        margin-top: 60px !important;
+    }
+}
