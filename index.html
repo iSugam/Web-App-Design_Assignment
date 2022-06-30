@@ -35,6 +35,8 @@
                 </ul>
             </div>
         </nav>
+
+        <div class="nav-icon"><i class="bi bi-list"></i></div>
     </header>
     <!--==================== HEADER SECTION END ====================-->
 
@@ -52,16 +54,20 @@
                 <div class="register-btn"><a href="#"><i class="bi bi-person-plus-fill"></i> Register</a></div>
             </div>
 
+            <!--========== FORM SECTION WITH BOOTSTRAP VALIDATION ==========-->
             <div class="form-content col-4 mt-5">
-                <form action="" >
-                    <div class="mb-4">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <form action="" class="needs-validation" novalidate>
+                    <div class="mb-4 position-relative">
+                        <label for="validationTooltip01" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="validationTooltip01" placeholder="name@example.com" required>
+                        <div class="invalid-tooltip">Incorrect Email Address.</div>
+                        <div class="valid-tooltip">Email is correct.</div>
                     </div>
 
-                    <div class="mb-2">
-                        <label for="formGroupExampleInput2" class="form-label">Password</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+                    <div class="mb-2 position-relative">
+                        <label for="validationCustom02" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Password" required>
+                        <div class="invalid-tooltip">Incorrect Password.</div>
                     </div>
 
                     <div class="forgot-password mb-4"><a href="#">Forgot Password?</a></div>
@@ -168,8 +174,8 @@
 
     <!--==================== FOOTER SECTION START ====================-->
     <footer id="footer">
-        <div class="all-contacts">
-            <div class="contact-us">
+        <div class="all-contacts row">
+            <div class="contact-us col-sm mt-5">
                 <h5>Contact Us</h5>
                 <div class="contact-details">
                     <a href="#"><i class="bi bi-geo-alt-fill"></i> 123 Street, New York, USA</a>
@@ -184,7 +190,7 @@
                 </div>
             </div>
     
-            <div class="quick-links">
+            <div class="quick-links col-sm mt-5">
                 <h5>Quick Links</h5>
                 <div class="links">
                     <a href="#"><i class="bi bi-caret-right-fill"></i> Term Of Use</a>
@@ -193,7 +199,7 @@
                 </div>
             </div>
     
-            <div class="write-us">
+            <div class="write-us col-5 mt-5">
                 <h5>Write To Us</h5>
                 <div class="links">
                     <a href="#">Email</a>
@@ -206,6 +212,9 @@
             <p>@ <b>Site name</b>, All right reserved</p>
         </div>
     </footer>
+
+    <script src="/bootstrap-validation.js"></script>
+    <script src="/script.js"></script>
 
 </body>
 </html>

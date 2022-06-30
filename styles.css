@@ -62,8 +62,9 @@ header nav .nav-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(16, 29, 100, 0.5);
+    background-color: rgb(18 62 88 / 29%);
     padding: 0 4rem;
+    position: relative;
 }
 header nav .nav-items .logo a {
     text-decoration: none;
@@ -84,6 +85,15 @@ header nav .nav-items .links li a{
     font-size: clamp(15px, 2.5vw, 20px);
 }
 
+.nav-icon {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    font-size: 38px;
+    color: #fff;
+    display: none;
+}
+
 /* ===============
 Main Section Style
 =============== */
@@ -102,7 +112,7 @@ Main Section Style
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(21, 43, 83, 0.574);
+    background-color: rgb(2 28 56 / 70%);
     z-index: -1;
 }
 
@@ -188,9 +198,6 @@ About Us Section Style
     align-items: center;
 }
 
-#about .about-img {
-    width: clamp(380px, 30vw, 550px);
-}
 #about .about-img img{
     width: clamp(380px, 30vw, 550px);
 }
@@ -203,7 +210,7 @@ Same style for about, works heading
 #partners .partners-heading h2 {
     margin-bottom: 30px;
     font-weight: normal;
-    font-size: clamp(30px, 6.5vw, 50px);
+    font-size: clamp(25px, 6.5vw, 50px);
     position: relative;
     width: max-content;
 }
@@ -254,6 +261,7 @@ Partners Section Style
     margin-top: 30px;
 }
 
+/* All parteners Icon Images*/
 .all-partners div img {
     width: 10%;
     float: right;
@@ -261,28 +269,29 @@ Partners Section Style
 }
 
 .all-partners .itunes img {
-    width: 65px;
+    width: 6%;
 }
 .all-partners .target img {
-    width: 80px;
+    width: 8%;
 }
 .all-partners .Starbucks img {
-    width: 74px;
+    width: 9%;
 }
 
+/* =================
+Footer Section Style
+================= */
 #footer {
     width: 100%;
     height: 100%;
     margin-top: 200px;
-    padding: 100px;
+    padding: 80px;
     padding-bottom: 30px;
     background-color: #093851;
 }
 
 #footer .all-contacts{
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 450px);
 }
 
 #footer .all-contacts::after {
@@ -318,8 +327,12 @@ Partners Section Style
     display: block;
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: clamp(15px, 3vw, 20px);
     margin-top: 10px;
+}
+
+#footer .contact-us .contact-details{
+    width: max-content;
 }
 
 #footer .contact-us .contact-details a i {
@@ -336,4 +349,6 @@ Partners Section Style
     color: #fff;
     margin-top: 70px;
     margin-left: 20px;
+    width: max-content;
+    font-size: clamp(12px, 2vw, 18px);
 }
