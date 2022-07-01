@@ -56,18 +56,22 @@
 
             <!--========== FORM SECTION WITH BOOTSTRAP VALIDATION ==========-->
             <div class="form-content col-4 mt-5">
-                <form action="" class="needs-validation" novalidate>
+
+                <form action="" class="needs-validation" novalidate id="form">
+                    
                     <div class="mb-4 position-relative">
                         <label for="validationTooltip01" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="validationTooltip01" placeholder="name@example.com" required>
                         <div class="invalid-tooltip">Incorrect Email Address.</div>
                         <div class="valid-tooltip">Email is correct.</div>
+                        <div class="errmess"></div>
                     </div>
 
                     <div class="mb-2 position-relative">
                         <label for="validationCustom02" class="form-label">Password</label>
                         <input type="text" class="form-control" id="validationCustom02" placeholder="Password" required>
                         <div class="invalid-tooltip">Incorrect Password.</div>
+                        <div class="errmess"></div>
                     </div>
 
                     <div class="forgot-password mb-4"><a href="#">Forgot Password?</a></div>
@@ -84,7 +88,9 @@
                         <a class="social-icon linkedin" href="#"><i class="bi bi-linkedin"></i></a>
                         <a class="social-icon google-plus" href="#"><i class="bi bi-google"></i></a>
                     </div>
+
                 </form>
+
             </div>
 
         </section>
@@ -93,7 +99,7 @@
         <!--==================== ABOUT SECTION START ====================-->
         <section id="about" class="d-flex justify-content-around gap-5">
             <div class="about-img">
-                <img src="/assets/images/about-img.png" alt="">
+                <img src="assets/images/about-img.png" alt="">
             </div>
 
             <div class="about-text">
@@ -138,17 +144,17 @@
 
             <div class="works-cards-container row text-center gap-3 mt-3 px-2">
                 <div class="col-sm border border-1 py-3">
-                    <div class="icon"><img src="/assets/images/icon-1.png" alt=""></div>
+                    <div class="icon"><img src="assets/images/icon-1.png" alt=""></div>
                     <h4>Register for free</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="col-sm border border-1 py-3">
-                    <div class="icon"><img src="/assets/images/icon-4.png" alt=""></div>
+                    <div class="icon"><img src="assets/images/icon-4.png" alt=""></div>
                     <h4>Take Surveys</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="col-sm border border-1 py-3">
-                    <div class="icon"><img src="/assets/images/icon-6.png" alt=""></div>
+                    <div class="icon"><img src="assets/images/icon-6.png" alt=""></div>
                     <h4>Redeem</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
@@ -162,10 +168,10 @@
                 <h2>Global Incentive Partners</h2>
             </div>
             <div class="all-partners">
-                <div class="itunes"><img src="/assets/images/itunes.png" alt=""></div> 
-                <div class="target"><img src="/assets/images/target-png.png" alt=""></div>
-                <div class="Starbucks"><img src="/assets/images/Starbucks-Logo-600x600-gray.png" alt=""></div>
-                <div class="amazon"><img src="/assets/images/logo-amazon-404px-grey.png" alt=""></div>
+                <div class="itunes"><img src="assets/images/itunes.png" alt=""></div> 
+                <div class="target"><img src="assets/images/target-png.png" alt=""></div>
+                <div class="Starbucks"><img src="assets/images/Starbucks-Logo-600x600-gray.png" alt=""></div>
+                <div class="amazon"><img src="assets/images/logo-amazon-404px-grey.png" alt=""></div>
             </div>
         </section>
         <!--==================== PARTNERS SECTION END ====================-->
@@ -213,8 +219,8 @@
         </div>
     </footer>
 
-    <script src="/bootstrap-validation.js"></script>
-    <script src="/script.js"></script>
+    <script src="bootstrap-validation.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
