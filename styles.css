@@ -307,6 +307,7 @@ Footer Section Style
     padding: 80px;
     padding-bottom: 30px;
     background-color: #093851;
+    position: relative;
 }
 
 #footer .all-contacts{
@@ -370,4 +371,18 @@ Footer Section Style
     margin-left: 20px;
     width: max-content;
     font-size: clamp(12px, 2vw, 18px);
+}
+
+#footer .go-up {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    background-color: #1DA1F2;
+    border-radius: 6px;
+}
+
+#footer .go-up a {
+    text-decoration: none;
+    padding: .3rem .7rem;
+    color: #fff;
 }
